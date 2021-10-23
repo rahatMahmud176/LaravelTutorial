@@ -27,3 +27,11 @@ Route::get('/test',[
     'uses'       =>'App\Http\Controllers\MainController@test',
     'as'         =>'test'
 ]);
+Route::get('/multipleRowInsert',[
+    'uses'       =>'App\Http\Controllers\MainController@multipleRowInsert',
+    'as'         =>'multipleRowInsert'
+]);
+Route::post('/multipleRowInfoSubmit',[
+    'uses'       =>'App\Http\Controllers\MainController@multipleRowInfoSubmit',
+    'as'         =>'multipleRowInfoSubmit'
+]);

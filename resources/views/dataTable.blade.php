@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap4.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
+
+    <div class="row">
+        <div class="col-sm-2 mr-1"><a href="{{ route('multipleRowInsert') }}" class="btn btn-primary ">Multiple row insert</a></div> 
+    </div>
    
     <div class="container">
      
