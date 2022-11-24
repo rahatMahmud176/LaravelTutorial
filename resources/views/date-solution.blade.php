@@ -11,6 +11,9 @@
 	 Atik vai important line :	date("d-M-Y h:i:s a", strtotime($item->created_at));
 	 Today     :	{{ $today = date("d-M-Y h:i:s a") }}
 	 Yesterday :	{{ $yesterday = date("Y-m-d", strtotime( '-1 days' ) ) }}
+
+	 any date : 'orders' => Order::whereDate('created_at','=',date($request->date))->orderBy('id','desc')->get(),
+	 
 	</div>
 
 </body>
