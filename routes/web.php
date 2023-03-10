@@ -35,3 +35,8 @@ Route::post('/multipleRowInfoSubmit',[
     'uses'       =>'App\Http\Controllers\MainController@multipleRowInfoSubmit',
     'as'         =>'multipleRowInfoSubmit'
 ]);
+
+Route::get('mail-send',[
+    'uses'       =>'App\Http\Controllers\MainController@mailSend',
+    'as'         =>'mail-send'
+]);
