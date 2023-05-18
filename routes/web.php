@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\PaginationController;
 use Illuminate\Support\Facades\Route;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +43,6 @@ Route::get('mail-send',[
     'uses'       =>'App\Http\Controllers\MainController@mailSend',
     'as'         =>'mail-send'
 ]);
+
+Route::get('/pagination',[PaginationController::class,'index']);
+Route::post('pagination/fetch',[PaginationController::class,'fetch'])->name('pagination.fetch');
